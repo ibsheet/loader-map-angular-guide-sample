@@ -1,0 +1,93 @@
+<div class="toolbar" role="banner">
+  <div style="padding-left: 24px; padding-right: 24px;">
+    <span class="material-icons" style="font-size: 1.3em;">grid_view</span>
+    <a [routerLink]="['./']">
+      <span style="color: #fff;font-size: 24px;">IBMap</span>
+    </a>
+  </div>
+  <div class="spacer"></div>
+</div>
+
+<div class="content" role="main">
+  <div>
+    <div class="content_title">
+      <span class="material-icons" style="color: #fd3875; font-size: 2.0em;">grid_view</span>
+      <span class="main_title">IBMap</span>
+      <p class="sub_title">Loader를 사용하여 IBMap의 사용할 수 있는 Angular 환경에서 제공합니다.</p>
+      <div style="padding-top: 20px;">
+        <!--
+        <a class="title_button_sandbox" mat-raised-button href="https://stackblitz.com/edit/github-qggetz-xqvocg?file=src%2Fapp%2Fapp.component.ts,src%2Findex.html" target="_blank">
+          <fa-icon [icon]="['fas', 'code']"></fa-icon>
+          SANDBOX
+        </a>
+        -->
+        <a class="title_button_git" mat-raised-button href="https://github.com/ibsheet/loader-angular-guide-sample" target="_blank">
+          <fa-icon [icon]="['fab', 'github']"></fa-icon>
+          GITHUB
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div style="width:100%;">
+    <div class="main">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <div style="padding: 48px; background-color: #fff;">
+    <div style="margin: 0px auto; max-width: 1200px;">
+      <span class="material-icons" style="color: #fd3875; font-size: 2em;">book</span>
+      <span class="main_title">
+        Provide
+      </span>
+      <ul>
+        <li>
+          <span class="foot_list">
+            <a href="https://www.ibsheet.com/" target="_blank">Package</a>
+          </span>
+          <span class="foot_list_desc">: 해당 프로젝트를 실행하려면 ibmap 라이브러리가 포함된 패키지가 필요합니다.</span>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span class="foot_list">
+            <a href="https://github.com/ibsheet/loader" target="_blank">Loader</a>
+          </span>
+          <span class="foot_list_desc">: SPA 환경에서 IBMap 를 사용하기 위한 라이브러리입니다.</span>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span class="foot_list">
+            <a href="https://ibsheet.github.io/loader-manual/" target="_blank">IBSheet Loader Manual</a>
+          </span>
+          <span class="foot_list_desc">: IBSheet-Loader 를 사용하기 위한 메뉴얼 안내입니다.</span>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span class="foot_list">
+            <a href="https://docs.ibsheet.com/ibmap/v1/manual/#docs/intro/feature" target="_blank">IBMap Manual</a>
+          </span>
+          <span class="foot_list_desc">: IBMap 의 다양한 기능을 쉽게 사용할 수 있도록 메뉴얼을 제공합니다.</span>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span class="foot_list">
+            <a href="https://ibsheet.com/v8/ibmap/html/examples.html" target="_blank">IBMap Sample</a>
+          </span>
+          <span class="foot_list_desc">: 더 다양한 샘플이 모여있는 IBMap Demo Sample 을 제공합니다.</span>
+        </li>
+      </ul>
+      <div>
+        <div class="foot_copyright">
+          <p>© 2025 IBMap Angular Guide Sample</p>
+          <span>Copyright &#64; IBMap 2025</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

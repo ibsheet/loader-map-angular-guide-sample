@@ -1,0 +1,56 @@
+mat-grid-tile {
+  margin: 10px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+mat-grid-list {
+  /* margin-top: 3%; */
+}
+a {
+  color: #000;
+}
+.grid_img {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.grid_hover {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  padding: 20px 20px 0 20px;
+  z-index: 2;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.5);
+
+}
+.grid_hover:hover {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  transition: opacity 350ms ease;
+}
+.grid_title {
+  color: #fff;
+  padding: 5px 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-right: 0.25rem;
+  border-radius: 0.25rem
+}
+.grid_subtitle {
+  color: #000;
+  padding: 0px 5px;
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+.grid_icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.8;
+  position: absolute;
+}

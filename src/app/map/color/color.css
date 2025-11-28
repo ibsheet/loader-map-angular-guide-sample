@@ -1,0 +1,11 @@
+.desc_title {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.desc_sub {
+  color: #4c4c57;
+  font-size: 1rem;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}

@@ -1,0 +1,20 @@
+<mat-grid-list cols="3" rowHeight="1.5:1">
+  <mat-grid-tile *ngFor="let item of items;">
+    <div style="width:100%; padding: 10px;">
+      <div style="width: 100%;">
+        <div class="grid_img" [ngStyle]="{'background-image': getImage(item.url)}">
+          <div class="grid_hover">
+            <fa-icon class="grid_icon" [icon]="['fas', 'search']" [routerLink]="[item.url]" routerLinkActive="active" size="4x"></fa-icon>
+          </div>
+        </div>
+        <div>
+          <!--
+          <span class="grid_title" [ngStyle]="{'background': getColor(item.val)}">{{ item.val }}</span>
+          -->
+          <span class="grid_title">{{ item.val }}</span>
+          <span class="grid_subtitle">{{ item.type }}</span>
+        </div>
+      </div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
