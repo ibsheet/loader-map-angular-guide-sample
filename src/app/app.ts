@@ -25,7 +25,6 @@ loader.load()
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [
     SharedModules,
     RouterOutlet, RouterLink
