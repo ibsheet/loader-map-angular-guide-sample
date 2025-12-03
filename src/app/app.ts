@@ -7,21 +7,25 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import loader from '@ibsheet/loader';
 
+// Leaflet 버전 상수
+const LEAFLET_VERSION = '1.9.4';
+const LEAFLET_BASE = `https://unpkg.com/leaflet@${LEAFLET_VERSION}/dist`;
+
 const ibmapLib = {
   name: 'ibmap',
   baseUrl: 'https://www.ibsheet.com/v8/assets/lib/ibmap/',
   dependentUrls: [
-    'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
-    'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
+    `${LEAFLET_BASE}/leaflet.css`,
+    `${LEAFLET_BASE}/leaflet.js`,
   ],
-}
+};
 
 // 로더 config
 loader.config({
   registry: [ibmapLib]
 });
 
-loader.load()
+loader.load();
 
 @Component({
   selector: 'app-root',
@@ -38,4 +42,5 @@ export class App {
     library.addIcons(faCode, faSearch, faGithub);
   }
   protected title = 'ng-guide-samples';
+  protected currentYear = new Date().getFullYear();
 }

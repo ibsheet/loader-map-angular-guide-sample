@@ -9,3 +9,53 @@
   margin-top: 14px;
   margin-bottom: 14px;
 }
+
+/* 지도/타입 선택 옵션 공통 스타일 */
+.map_country,
+.map_type {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: 24px;
+  margin-bottom: 12px;
+}
+
+.option-label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.option-group {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.option-group input[type="radio"] {
+  display: none;
+}
+
+.option-group label {
+  cursor: pointer;
+  padding: 8px 16px;
+  background-color: #fff;
+  border-right: 1px solid #dee2e6;
+  color: #495057;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.option-group label:last-of-type {
+  border-right: none;
+}
+
+.option-group label:hover {
+  background-color: #f8f9fa;
+}
+
+.option-group input[type="radio"]:checked + label {
+  background-color: #4a90d9;
+  color: #fff;
+}

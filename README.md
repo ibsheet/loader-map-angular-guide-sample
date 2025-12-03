@@ -5,7 +5,7 @@
 ## 📖 구조
 
 👉 app.ts 에 loader.config 를 한 번 실행합니다. <br/>
-👉 config 폴더 안에 chart-create.ts 가 있습니다. <br/>
+👉 config 폴더 안에 map-create.ts 가 있습니다. <br/>
 👉 각 폴더명으로 샘플 컴포넌트가 존재합니다.
 
 ### 사용기술
